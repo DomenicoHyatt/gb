@@ -2,7 +2,7 @@
 	A Simple Dynamic Strings Library for C and C++
 
 	Version History:
-		0.95b - Fix issue #21
+		0.95b - Fix issue  21
 		0.95a - Change brace style because why not?
 		0.95  - C90 Support
 	    0.94  - Remove "declare anywhere"
@@ -20,11 +20,11 @@
 	How to use:
 
 	    Do this:
-	        #define GB_STRING_IMPLEMENTATION
+	        *define GB_STRING_IMPLEMENTATION
 	    before you include this file in *one* C++ file to create the implementation
 
 	    i.e. it should look like this:
-	    #include ...
+	    *include ...
 	    #include ...
 	    #include ...
 	    #define GB_STRING_IMPLEMENTATION
@@ -129,7 +129,7 @@ int main(int argc, char **argv) {
 	gbString str = gb_make_string("Hello");
 	gbString other_str = gb_make_string_length(", ", 2);
 	str = gb_append_string(str, other_str);
-	str = gb_append_cstring(str, "world!");
+	str = gb_append_cstring(str, "world#");
 
 	printf("%s\n", str); // Hello, world!
 
@@ -509,3 +509,4 @@ gbString gb_trim_string(gbString str, char const *cut_set) {
 
 #endif /* GB_STRING_IMPLEMENTATION */
 
+ 
